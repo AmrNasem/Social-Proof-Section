@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(images/bg-pattern-top-desktop.svg) no-repeat fixed 0 0, url(images/bg-pattern-bottom-desktop.svg) no-repeat fixed 100% 100%;
+  font-family: spartan, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.main {
+  width: 1100px;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main .One {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .One .intro {
+  width: 400px;
+}
+
+.main .One .intro .add {
+  color: hsl(300, 43%, 22%);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main .One .intro .disc {
+  font-size: 14px;
+  color: hsl(303, 10%, 53%);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.main .One .Rate > div {
+  display: flex;
+  padding: 15px 0px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 8px;
+  margin-bottom: 14px;
+  width: 400px;
+  align-items: center;
+}
+
+.main .One .Rate {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.main .One .Rate .two {
+  align-self: center;
+}
+
+.main .One .Rate .three {
+  align-self: flex-end;
+}
+
+.main .One .Rate > div .star {
+  margin: 0 25px;
+}
+
+.main .One .Rate .rate {
+  font-size: 12px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.main .One .Rate > div .star img {
+  transform: scale(0.9);
+}
+
+.main .Two {
+  display:flex;
+  height: 270px;
+}
+
+.main .Two > div {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 8px;
+  height: 230px;
+}
+
+.main .Two .two {
+  margin: 0 30px;
+  align-self: center;
+}
+
+.main .Two .three {
+  align-self: flex-end;
+}
+
+.main .Two > div .id {
+  display: flex;
+  align-items: center;
+  margin: 15px 10px 0;
+}
+
+.main .Two > div .id img {
+  border-radius: 50%;
+  transform: scale(0.5);
+}
+
+.main .Two > div .id .idwp .name {
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.main .Two > div .id .idwp .status {
+  font-size: 12px;
+  color: hsl(333, 80%, 67%);
+}
+
+.main .Two > div .comment {
+  padding: 0 30px;
+  font-size: 12px;
+  color: hsl(300, 24%, 96%);
+  line-height: 1.8;
+}
+
+@media (max-width: 375px){
+  body {
+    background: url(images/bg-pattern-top-desktop.svg) no-repeat fixed -80px -80px, url(images/bg-pattern-bottom-desktop.svg) no-repeat fixed 55% 120% !important;
+  }
+  .main {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+    align-items: center;
+    min-width: 265px;
+  }
+  .main .One {
+    flex-direction: column;
+    width: 87%;
+  }
+  .main .One .intro {
+    text-align: center;
+    width: 100%;
+  }
+  .main .One .intro .add {
+    font-size: 31px;
+    margin: 15px;
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+  .main .One .intro .disc {
+    margin: 25px 0;
+    font-weight: bold;
+    line-height: 1.6;
+    font-size: 14px;
+  }
+  .main .One .Rate {
+    width: 100%;
+    align-items: center;
+  }
+  .main .One .Rate .three {
+    align-self: center;
+  }
+  .main .One .Rate > div {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    border-radius: 7px !important;
+  }
+  .main .One .Rate .rate {
+    font-size: 14px;
+  }
+  .Two {
+    flex-direction: column;
+    align-items: center;
+    height: 100% !important;
+    gap: 15px;
+    margin-top: 30px;
+    width: 87%;
+  }
+  .Two .three {
+    align-self: center !important;
+  }
+  .Two > div {
+    width: 100%;
+    border-radius: 7px !important;
+  }
+}
